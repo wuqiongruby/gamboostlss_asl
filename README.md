@@ -8,4 +8,5 @@ This repository contains the functions to implement asymptotic adaptive step len
 - MASS
 - survival
 - mboost
+- parallel
   
