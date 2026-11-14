@@ -46,18 +46,6 @@ res_gaussian <- boost_GAMLSS(y1, data1, distribution = "Gaussian", m_stop = cv_g
 res_gaussian$b_mu
 res_gaussian$b_si
 
-
-### path plots without intercept
-matplot(t(res_gaussian$mu_mat[2:7,]), type = "l",
-        xlab = "iteration",
-        ylab = "coefficient",
-        main = "Path Plot Mu for Gaussian GAMLSS")
-matplot(t(res_gaussian$si_mat[2:7,]), type = "l",
-        xlab = "iteration",
-        ylab = "coefficient",
-        main = "Path Plot Sigma for Gaussian GAMLSS")
-
-
 ### get & plot step lengths
 res_gaussian$v_mu
 res_gaussian$v_si
